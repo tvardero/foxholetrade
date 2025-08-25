@@ -13,7 +13,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     permissions:
-      contents: read #This is required for actions/checkout
+      contents: read
     
     steps:
       - uses: actions/checkout@v4
@@ -50,4 +50,4 @@ jobs:
           app-name: 'foxholetrade-webapp'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_024C1060A14F41BC80DDD74D9411681F }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_BD32203B43AA4721B2E568DEEE53657B }}
