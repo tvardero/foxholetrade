@@ -23,8 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.Data", "src\Fo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pipelines", "pipelines", "{DE79A9C2-4B82-4EA4-9376-F2BD7EC982EB}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\deploy.yml = .github\workflows\deploy.yml
 		.github\workflows\pr_test.yml = .github\workflows\pr_test.yml
+		.github\workflows\master_foxholetrade-webapp.yml = .github\workflows\master_foxholetrade-webapp.yml
 	EndProjectSection
 EndProject
 Global
