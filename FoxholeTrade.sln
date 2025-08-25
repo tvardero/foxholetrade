@@ -8,6 +8,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_sln_root", "_sln_root", "{
 		README.md = README.md
 		.config\dotnet-tools.json = .config\dotnet-tools.json
 		.editorconfig = .editorconfig
+		.github\FUNDING.yml = .github\FUNDING.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{60E370E3-DCBF-4724-875B-F4B06775422D}"
@@ -20,6 +21,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.WebApp", "src\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.Data", "src\FoxholeTrade.Data\FoxholeTrade.Data.csproj", "{99776B28-9EBE-4824-883D-F85C05E7B207}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pipelines", "pipelines", "{DE79A9C2-4B82-4EA4-9376-F2BD7EC982EB}"
+	ProjectSection(SolutionItems) = preProject
+		.github\workflows\deploy.yml = .github\workflows\deploy.yml
+		.github\workflows\pr_test.yml = .github\workflows\pr_test.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,6 +36,7 @@ Global
 		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5} = {11837AEB-47B7-4413-B918-20AD50B47141}
 		{A612F598-37EE-4D4D-B38C-F16DD23377C5} = {60E370E3-DCBF-4724-875B-F4B06775422D}
 		{99776B28-9EBE-4824-883D-F85C05E7B207} = {60E370E3-DCBF-4724-875B-F4B06775422D}
+		{DE79A9C2-4B82-4EA4-9376-F2BD7EC982EB} = {8EEB3F25-F37D-44AF-938F-D6CE03CC68D5}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
