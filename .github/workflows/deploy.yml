@@ -24,13 +24,13 @@ jobs:
           dotnet-version: ${{vars.DOTNET_FRAMEWORK_VERSION}}
 
       - name: Build project
-        run: dotnet publish ${{vars.PROJECT_PATH}} -c Release -o /publish -r ${{vars.DOTNET_RUNTIME}}
+        run: dotnet publish ${{vars.PROJECT_PATH}} -c Release -o publish -r ${{vars.DOTNET_RUNTIME}}
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: dotnet-app
-          path: /publish
+          path: publish
   
   deploy:
     runs-on: ubuntu-latest
