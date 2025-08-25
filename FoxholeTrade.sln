@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_sln_root", "_sln_root", "{8EEB3F25-F37D-44AF-938F-D6CE03CC68D5}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Directory.Build.props = Directory.Build.props
+		global.json = global.json
+		README.md = README.md
+		.config\dotnet-tools.json = .config\dotnet-tools.json
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{60E370E3-DCBF-4724-875B-F4B06775422D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{11837AEB-47B7-4413-B918-20AD50B47141}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.Tests", "tests\FoxholeTrade.Tests\FoxholeTrade.Tests.csproj", "{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.WebApp", "src\FoxholeTrade.WebApp\FoxholeTrade.WebApp.csproj", "{A612F598-37EE-4D4D-B38C-F16DD23377C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.Data", "src\FoxholeTrade.Data\FoxholeTrade.Data.csproj", "{99776B28-9EBE-4824-883D-F85C05E7B207}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5} = {11837AEB-47B7-4413-B918-20AD50B47141}
+		{A612F598-37EE-4D4D-B38C-F16DD23377C5} = {60E370E3-DCBF-4724-875B-F4B06775422D}
+		{99776B28-9EBE-4824-883D-F85C05E7B207} = {60E370E3-DCBF-4724-875B-F4B06775422D}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A612F598-37EE-4D4D-B38C-F16DD23377C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A612F598-37EE-4D4D-B38C-F16DD23377C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A612F598-37EE-4D4D-B38C-F16DD23377C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A612F598-37EE-4D4D-B38C-F16DD23377C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99776B28-9EBE-4824-883D-F85C05E7B207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99776B28-9EBE-4824-883D-F85C05E7B207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99776B28-9EBE-4824-883D-F85C05E7B207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99776B28-9EBE-4824-883D-F85C05E7B207}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
