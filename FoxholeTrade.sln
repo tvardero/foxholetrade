@@ -9,6 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_sln_root", "_sln_root", "{
 		.config\dotnet-tools.json = .config\dotnet-tools.json
 		.editorconfig = .editorconfig
 		.github\FUNDING.yml = .github\FUNDING.yml
+		compose.yaml = compose.yaml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{60E370E3-DCBF-4724-875B-F4B06775422D}"
@@ -17,15 +18,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{11837AEB
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.Tests", "tests\FoxholeTrade.Tests\FoxholeTrade.Tests.csproj", "{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.WebApp", "src\FoxholeTrade.WebApp\FoxholeTrade.WebApp.csproj", "{A612F598-37EE-4D4D-B38C-F16DD23377C5}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.Data", "src\FoxholeTrade.Data\FoxholeTrade.Data.csproj", "{99776B28-9EBE-4824-883D-F85C05E7B207}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pipelines", "pipelines", "{DE79A9C2-4B82-4EA4-9376-F2BD7EC982EB}"
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\pr_test.yml = .github\workflows\pr_test.yml
 		.github\workflows\master_foxholetrade-webapp.yml = .github\workflows\master_foxholetrade-webapp.yml
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.Data", "src\FoxholeTrade.Data\FoxholeTrade.Data.csproj", "{A8DFCEE0-9FF8-42F9-ABAA-8413C3431346}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxholeTrade.WebApp", "src\FoxholeTrade.WebApp\FoxholeTrade.WebApp.csproj", "{A621BB37-27ED-469C-BE5F-B24ED0B42214}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,22 +35,22 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5} = {11837AEB-47B7-4413-B918-20AD50B47141}
-		{A612F598-37EE-4D4D-B38C-F16DD23377C5} = {60E370E3-DCBF-4724-875B-F4B06775422D}
-		{99776B28-9EBE-4824-883D-F85C05E7B207} = {60E370E3-DCBF-4724-875B-F4B06775422D}
 		{DE79A9C2-4B82-4EA4-9376-F2BD7EC982EB} = {8EEB3F25-F37D-44AF-938F-D6CE03CC68D5}
+		{A8DFCEE0-9FF8-42F9-ABAA-8413C3431346} = {60E370E3-DCBF-4724-875B-F4B06775422D}
+		{A621BB37-27ED-469C-BE5F-B24ED0B42214} = {60E370E3-DCBF-4724-875B-F4B06775422D}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{52E28939-02EB-4FA0-BC41-AEFF162EE7F5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A612F598-37EE-4D4D-B38C-F16DD23377C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A612F598-37EE-4D4D-B38C-F16DD23377C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A612F598-37EE-4D4D-B38C-F16DD23377C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A612F598-37EE-4D4D-B38C-F16DD23377C5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{99776B28-9EBE-4824-883D-F85C05E7B207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99776B28-9EBE-4824-883D-F85C05E7B207}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99776B28-9EBE-4824-883D-F85C05E7B207}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99776B28-9EBE-4824-883D-F85C05E7B207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8DFCEE0-9FF8-42F9-ABAA-8413C3431346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8DFCEE0-9FF8-42F9-ABAA-8413C3431346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8DFCEE0-9FF8-42F9-ABAA-8413C3431346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8DFCEE0-9FF8-42F9-ABAA-8413C3431346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A621BB37-27ED-469C-BE5F-B24ED0B42214}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A621BB37-27ED-469C-BE5F-B24ED0B42214}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A621BB37-27ED-469C-BE5F-B24ED0B42214}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A621BB37-27ED-469C-BE5F-B24ED0B42214}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
